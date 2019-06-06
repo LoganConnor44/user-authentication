@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { userActions, loginActions } from '../Actions';
+import { 
+    userActions,
+    loginActions
+} from '../actions';
 import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
