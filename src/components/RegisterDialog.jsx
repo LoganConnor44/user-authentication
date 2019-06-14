@@ -41,7 +41,7 @@ class RegisterDialog extends React.Component {
     }
 
     /**
-	 * Returns FALSE to the root reduce as property registerDialogOpen .
+	 * Returns FALSE to the root reduce as property isRegisterDialogOpen .
 	 */
     handleClose = () => {
         this.props.dispatch(registerActions.close());
@@ -89,7 +89,7 @@ class RegisterDialog extends React.Component {
         return (
             <React.Fragment>
                 <Dialog
-                    open={this.props.registerDialogOpen ? true : false}
+                    open={this.props.isRegisterDialogOpen ? true : false}
                     TransitionComponent={Transition}
                     onClose={this.handleClose}
                     aria-labelledby="alert-dialog-slide-title"
@@ -181,7 +181,7 @@ function mapStateToProps(state) {
     const { registering } = state.registration;
     return {
         registering,
-        registerDialogOpen: state.registerDialogOpen
+        isRegisterDialogOpen: state.isRegisterDialogOpen
     };
 }
 
