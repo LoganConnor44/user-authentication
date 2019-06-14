@@ -78,11 +78,13 @@ class RegisterDialog extends React.Component {
     }
 
     render() {
-        const { registering } = this.props;
+        const { 
+            registering,
+            classes
+        } = this.props;
         const {
             user
         } = this.state;
-        const { classes } = this.props;
 
         return (
             <React.Fragment>
